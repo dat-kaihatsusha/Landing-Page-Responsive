@@ -46,7 +46,7 @@ html{
     margin: 0px auto;
 }
 
-h1, h2{
+h1, h2, h3{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -58,6 +58,17 @@ h1{
     color: white;
     line-height: 135%;
     margin-bottom: 50px;
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
 }
 
 h2{
@@ -92,7 +103,11 @@ section{
     padding: 50px;
 }
 
-
+.small-icon{
+    color:  #33577a;
+    font-size: 130%;
+    margin-right: 10px;
+}
 
 
 
@@ -194,4 +209,45 @@ header{
 .about-picture:active .picture-title{
     transform: translate(-65%, -50%);
     opacity: 1;
+}
+
+/* ---------------------------------------------------------------- */
+/* -----------------------PRODUCTS SECTION----------------------------- */
+/* -------------------------------------------------------------------- */
+
+.products-section{
+    background-color: #f4f4f4;
+}
+
+.products-section h2{
+    margin-bottom: 60px;
+}
+
+.product-box{
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    height: 350px;
+}
+
+.product-price{
+    color: #265077;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.product-price span{
+    font-size: 80%;
+}
+
+.product-box ul li{
+    margin-left: 20%;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-box .btn{
+    margin-left: 20%;
 }
