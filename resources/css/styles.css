@@ -1,3 +1,6 @@
+/* ------------------------------------------------------------- */
+/* -----------------------DEFAULT SETUP---------------------------- */
+/* ---------------------------------------------------------------- */
 *{
     padding: 0px;
     margin: 0px;
@@ -12,13 +15,61 @@ html{
     text-rendering: optimizeLegibility;/*Đây là cách hiển thị chữ trên website*/
     /* Mặc định là 16px*/
 }
+/* ------------------------------------------------------------ */
+/* ------------------REUSABLE COMPONENT----------------------------- */
+/* ---------------------------------------------------------------- */
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #E67E22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+    transition: all .3s;
+}
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+}
+
+.clear-fix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
 
 /* ----------------------------------------- */
 /* --------------------HEADER--------------------- */
 /* ----------------------------------------------- */
 
 header{
-    background-image: url('../img/background4.jpeg');
+    background-image: linear-gradient(45deg,rgba(2,33,64,0.8) 55%,  rgba(45,95,93,0.85)), url('../img/background4.jpeg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -28,9 +79,51 @@ header{
 
 .logo{
     width: 350px;
+    float: left;
+    margin-left: 70px;
+    margin-top: -50px;
 }
 
-.row{
-    width: 1140px;
-    margin: 0px auto;
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 55px;
 }
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    padding: 3px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cccccc;
+}
+
+
+
+
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    width: 1140px;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/* -----------------------ABOUT SECTION------------------------ */
+/* ---------------------------------------------------------------- */
