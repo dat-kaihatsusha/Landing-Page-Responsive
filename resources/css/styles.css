@@ -348,6 +348,113 @@ figcaption{
     background-attachment: fixed;
 }
 
+.information{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    word-spacing: 1px;
+    font-size: 95%;
+}
+
+.information .small-icon{
+    color: #427db4;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.information .small-icon:hover,
+.information .small-icon:active{
+    transform: scale(1.3);
+}
+
+.social-icons{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.social-icons li{
+    display: inline-block;
+    font-size: 250%;
+    margin-left: 20px;
+    color: white;
+    transition: all .3s;
+}
+
+.social-icons li i{
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.social-icons li i:hover,
+.social-icons li i:active{
+    transform: scale(1.3);
+    color: #E67E22;
+}
+
+/* -----------------------------form-------------------------------------- */
+form{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 40%;
+    width: 68%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+form .row{
+    margin-top: 20px;
+}
+
+label{
+    font-size: 150%;
+    color: white;
+}
+
+input, textarea{
+    outline: none; /*Tức là khi click nó sẽ không xuất hiện cái viền xanh nữa*/
+    padding: 10px;
+    background-color: rgba(48, 47, 47, 0.3);
+    border: 1px solid rgba(70, 68, 68, 0.7);
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none; /*Sẽ mất phần gạch gạch góc bên phải dưới của thẻ textarea*/
+    height: 100px;
+}
+
+input{
+    height: 50px;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 80%;
+    font-size: 100%;
+    transition: all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    color: white;
+    background-color: rgba(48, 47, 47, 0.8);
+}
+
+form .row:last-child{ /*Đây là cách chọn phần tử row là con cuối cùng có cha (có class) là .row*/
+    text-align: center;
+}
+
+input[type=submit]{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 60%;
+}
+
+
+
+
+
 
 
 
@@ -360,3 +467,4 @@ footer{
     color: white;
     padding: 20px;
 }
+
