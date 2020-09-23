@@ -8,3 +8,6 @@ Một số thuộc tính quan trọng:
 - line-height: khoảng cách giữa cách dòng
 - thuộc tính :hover thì đi cùng transition
 - Đối với thuộc tính display: inline; thì nó cho các phần tử trên cùng 1 dòng, tuy nhiên nó không cho chúng ta chỉnh thuộc tính width và height của phần tử, để chỉnh được, ta chuyển display về inline-block
+- Một thuộc tính rất hay sử dụng:
+tag_name::after  -->Đây là cách tạo element sau tag_name
+tag_name::before  -->Đây là cách tạo element trước tag_name
